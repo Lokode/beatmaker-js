@@ -23,20 +23,20 @@ svg {
 }
 
 .kick-pad {
-  background-image: linear-gradient(50deg, #b1cefc 0%, #c2e9fb 100%);
+  background-image: linear-gradient(50deg, #c9dcfa 0%, #d2edfa 100%);
   border-radius: 2px;
 }
 .snare-pad {
-  background-image: linear-gradient(150deg, #bfabe0 0%, #c29bc7 100%);
+  background-image: linear-gradient(150deg, #dad1e7 0%, #cdbbcf 100%);
   border-radius: 2px;
 }
 .hihat-pad {
   background-image: linear-gradient(
     50deg,
-    #f5afbc 0%,
-    #f89daf 19%,
-    #f1a3a6 60%,
-    #f3b4aa 100%
+    #f3bbc5 0%,
+    #f8b3c1 19%,
+    #eeb0b2 60%,
+    #f0c1ba 100%
   );
   border-radius: 2px;
 }
@@ -122,4 +122,13 @@ select {
   font-size: 1rem;
   margin-left: 1rem;
   width: 150px;
+}
+
+@keyframes playTrack {
+  from {
+    transition: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
