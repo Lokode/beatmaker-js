@@ -124,6 +124,27 @@ select {
   width: 150px;
 }
 
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 0.2rem 0rem;
+  width: 100%;
+  position: relative;
+  background: rgb(48, 48, 48);
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.tempo {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
 @keyframes playTrack {
   from {
     transition: scale(1);
