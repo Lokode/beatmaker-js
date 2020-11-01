@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background-image: linear-gradient(50deg, #b1cefc 0%, #c2e9fb 100%);
+  border-radius: 2px;
+}
+.snare-pad {
+  background-image: linear-gradient(150deg, #bfabe0 0%, #c29bc7 100%);
+  border-radius: 2px;
+}
+.hihat-pad {
+  background-image: linear-gradient(
+    50deg,
+    #f5afbc 0%,
+    #f89daf 19%,
+    #f1a3a6 60%,
+    #f3b4aa 100%
+  );
+  border-radius: 2px;
+}
+
+.kick-pad.active {
+  background-image: linear-gradient(50deg, #80b0ff 0%, #71d2ff 100%);
+}
+
+.snare-pad.active {
+  background-image: linear-gradient(150deg, #aa88e2 0%, #c36fce 100%);
+}
+
+.hihat-pad.active {
+  background-image: linear-gradient(
+    50deg,
+    #f8879c 0%,
+    #f05574 19%,
+    #f76166 60%,
+    #f08676 100%
+  );
+}
+
+.hihat-track,
+.snare-track,
+.kick-track {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hihat,
+.snare,
+.kick {
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 0.8rem;
+  border: none;
+  background-image: linear-gradient(150deg, #bebebe 0%, #969696 100%);
+  color: white;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-image: linear-gradient(150deg, #585858 0%, #242424 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 3rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  width: 150px;
+}
